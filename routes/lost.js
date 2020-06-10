@@ -55,12 +55,14 @@ const CalcDate = (createdAt) => {
 router.route('/').get((req, res) => {
     LostPet.find().then(pets => {
         
-        for(var i = 0; i<pets.length; i++ ){
-            console.log(pets[i].name)
-            const name = 'shephard'
-            pets[i].breed = name
-            pets.save()
-        }
+        // for(var i = 0; i<pets.length; i++ ){
+        //     console.log(pets[i].name)
+        //     const name = 'shephard'
+        //     pets[i].breed = name
+        //     pets.save()
+        // }
+
+        res.json(pets)
 
     }).catch(err => console.log(err))
 })

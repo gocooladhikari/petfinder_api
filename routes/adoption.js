@@ -29,8 +29,8 @@ const upload = multer({
 })
 
 router.route('/').get((req, res) => {
-    Adoption.find().then(user => {
-        res.json(user)
+    Adoption.find().pretty().then(pets => {
+        res.json(pets)
     }).catch(err => res.status(400).json(err))
 })
 
