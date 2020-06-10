@@ -24,5 +24,8 @@
     "randomstring": "^1.1.5",
     "sharp": "^0.25.2",
     "validator": "^13.0.0"
+  },
+  "engines": {
+    "node": "12.13.1"
   }
 }
